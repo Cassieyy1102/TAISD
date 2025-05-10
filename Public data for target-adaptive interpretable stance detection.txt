@@ -1,0 +1,9 @@
+公开数据包括中文立场检测数据集和10个大模型的实验结果。
+
+中文立场检测数据集包括五个事件，事件主题分别为：巴以冲突、央视记者采访燕郊爆炸被驱离、胡锡进谈虐猫事件、新闻学教授怒骂张雪峰、姜萍数学竞赛违规事件。
+数据共10513条，按照每个主题8:2、立场1:1的比例划分训练集/测试集，得到训练集数据为8386条，测试集数据为2127条。
+每条数据由事件主题topic、事件背景background、评论文本content和立场三元组（目标target、观点opinion、立场stance）组成。
+train.xlsx中是训练集数据，test.xlsx是测试集数据。
+
+10个大模型为GPT-4o、GPT-3.5 Turbo、DeepSeek-R1、DeepSeek-V3、Qwen2.5-72B-Instruct、Qwen2.5-32B-Instruct、Qwen2.5-7B-Instruct、Gemini-1.5-Pro、GLM-4-32B和GLM-4-9B。
+实验结果包括模型对每条数据所预测得到的立场三元组（预测目标predict_target、预测观点predict_opinion、预测立场predict_stance）和各评估指标得分情况。
